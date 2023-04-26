@@ -8,29 +8,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <!--links the html to css file-->
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 
 <body>
+    <!--Container-->
     <div class="container">
+        <!--SearchBox-->
         <div class="search-box">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot"></i> <!--Using 'i' tag displays picture-->
             <input type="text" placeholder="Enter your location">
             <button class="fa-solid fa-magnifying-glass"></button>
         </div>
 
+        <!--Not Found-->
         <div class="not-found">
             <img src="images/404.png">
             <p>Oops! Invalid location :/</p>
         </div>
 
+        <!--WeatherBox = gives description-->
         <div class="weather-box">
             <img src="">
             <p class="temperature"></p>
             <p class="description"></p>
         </div>
 
+        <!--Weather Details = gives humidity and wind #'s'-->
         <div class="weather-details">
             <div class="humidity">
                 <i class="fa-solid fa-water"></i>
@@ -48,7 +55,11 @@
             </div>
         </div>
     </div>
+    
+    <!--search function and location images-->
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    
+    <!--links the html to js file-->
     <script src="index.js"></script>
 </body>
 </html>
